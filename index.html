@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>JS_ToDo</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-		<h1>Simple ToDo List</h1>
-		<form id="new-task-form">
-			<input 
-				type="text" 
-				name="new-task-input" 
-				id="new-task-input" 
-				placeholder="What do you have planned?" />
-			<input 
-				type="submit"
-				id="new-task-submit" 
-				value="Add task" />
-		</form>
-	</header>
-    
+      <h1>Simple ToDo List</h1>
+      <form id="new-task-form">
+        <input
+          type="text"
+          name="new-task-input"
+          id="new-task-input"
+          placeholder="Enter Your Task Here....."
+        />
+        <input type="submit" id="new-task-submit" value="Add task" />
+      </form>
+    </header>
+
+    <section class="task-list">
+      <h2>My Tasks List</h2>
+      <div id="tasks">
+        <div class="task">
+          <div class="content">
+            <input type="text" class="text" value="A new task" readonly />
+          </div>
+          <div class="actions">
+            <button class="edit"><i class="las la-edit"></i></button>
+            <button class="delete"><i class="las la-trash-alt"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
