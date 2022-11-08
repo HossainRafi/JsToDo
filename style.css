@@ -1,13 +1,71 @@
 * {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Fira sans", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira sans", sans-serif;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	color: #FFF;
-	background-color: #00293b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #00293b;
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #07ffea;
+  margin-bottom: 1rem;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  flex: 1 1 0%;
+  background-color: #5f7c9f70;
+  padding: 1rem;
+  border-radius: .3rem;
+  margin-right: 1rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+  color: #c4c7c9;
+}
+
+#new-task-submit {
+  font-size: 1rem;
+  font-weight: 600;
+  background: #5f7c9f70;
+  cursor: pointer;
+  color: #c4c7c9;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
 }
