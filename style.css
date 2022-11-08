@@ -57,7 +57,7 @@ button {
 #new-task-submit {
   font-size: 1.3rem;
   font-weight: 500;
-  background: #5f7c9f70;
+  background: #003575;
   cursor: pointer;
   color: #c4c7c9;
   border-radius: .3rem;
@@ -84,6 +84,8 @@ main {
 }
 
 .task-list h2 {
+  border-bottom: 5px solid #0040c0;
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 600;
   color: #53b6e0;
@@ -113,7 +115,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-  color: red;
+  color: #b9d7f8;
 }
 
 .task .actions {
