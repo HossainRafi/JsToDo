@@ -55,8 +55,8 @@ button {
 }
 
 #new-task-submit {
-  font-size: 1rem;
-  font-weight: 00;
+  font-size: 1.3rem;
+  font-weight: 500;
   background: #5f7c9f70;
   cursor: pointer;
   color: #c4c7c9;
@@ -94,7 +94,7 @@ main {
 #tasks .task {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(37, 63, 90);
+  background-color: #1f2e41;
   padding: 1rem;
   border-radius: .3rem;
   margin-bottom: 1rem;
@@ -134,7 +134,7 @@ main {
 }
 
 .task .actions .delete {
-  color: #be1515;
+  color: #ff2727;
   padding: 0 .5rem;
   font-weight: 600;
 }
