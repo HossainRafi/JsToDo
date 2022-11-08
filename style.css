@@ -17,13 +17,15 @@ header {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
-  color: #07ffea;
-  margin-bottom: 1rem;
+  color: #2280fb;
+  margin-bottom: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #new-task-form {
@@ -54,7 +56,7 @@ button {
 
 #new-task-submit {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 00;
   background: #5f7c9f70;
   cursor: pointer;
   color: #c4c7c9;
@@ -68,4 +70,71 @@ button {
 
 #new-task-submit:active {
   opacity: 0.6;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #53b6e0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(37, 63, 90);
+  padding: 1rem;
+  border-radius: .3rem;
+  margin-bottom: 1rem;
+}
+
+.task .content {
+  flex: 1 1 0%;
+}
+
+.task .content .text {
+  color: #b9d7f8;
+  font-size: 1.25rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+  color: red;
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.task .actions .edit {
+  color: #00b900;
+  padding-right: 2rem;
+  font-weight: 600;
+}
+
+.task .actions .delete {
+  color: #be1515;
+  padding: 0 .5rem;
+  font-weight: 600;
 }
