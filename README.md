@@ -1,4 +1,4 @@
-## Project Name: [JSToDo](https://todo-with-js.netlify.app)
+## Project Name: [JsToDo](https://todo-with-js.netlify.app)
 
 ### Tech Stack:
 - HTML
